@@ -571,19 +571,69 @@
 
     <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
-            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                <path fill-rule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clip-rule="evenodd"></path>
+            <svg width="24" height="24">
+                <use href="./images/icons.svg#menu-icon-close"></use>
             </svg>
+
+
         </button>
 
         <ul class="mobile-menu">
-            <li><a href="" class="link">About</a></li>
-            <li><a href="" class="link">Products</a></li>
-            <li><a href="" class="link">Contacts</a></li>
-            <li><a href="" class="link">Career</a></li>
+            <li><a href="" class="link menu-active menu-item">Studio</a></li>
+            <li><a href="" class="link menu-item">Portfolio</a></li>
+            <li><a href="" class="link menu-item">Contacts</a></li>
         </ul>
+
+        <div>
+            <ul class="list menu-contacts-list">
+                <li class="menu-contacts-item">
+                    <a href="tel:+110001111111" class="menu-contacts-link link">+11 (000)
+                        111-11-11</a>
+                </li>
+                <li class="menu-contacts-item">
+                    <a href="mailto:info@devstudio.com" class="menu-mail-link link">info@devstudio.com</a>
+                </li>
+            </ul>
+
+
+            <!-- icon block -->
+            <ul class="menu-block-icon-list">
+                <li class="icon menu-icon-bg">
+                    <a href="https://www.instagram.com" class="menu-logo-link" target="_blank">
+                        <svg class="menu-icon" width="24" height="24">
+                            <use href="./images/icons.svg#instagram2">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="icon menu-icon-bg">
+                    <!-- twitter -->
+                    <a href="https://www.twitter.com" class="menu-logo-link" target="_blank">
+                        <svg class="menu-icon" width="24" height="24">
+                            <use href="./images/icons.svg#twitter1">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="icon menu-icon-bg">
+                    <!-- facebook -->
+                    <a href="https://www.facebook.com" class="menu-logo-link" target="_blank">
+                        <svg class="menu-icon" width="24" height="24">
+                            <use href="./images/icons.svg#facebook1">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="icon menu-icon-bg">
+                    <!-- linkedin -->
+                    <a href="https://www.linkedin.com" class="menu-logo-link" target="_blank">
+                        <svg class="menu-icon" width="24" height="24">
+                            <use href="./images/icons.svg#linkedin1">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+        </div>
     </div>
 
 
