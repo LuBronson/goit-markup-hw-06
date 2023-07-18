@@ -1152,8 +1152,13 @@ img {
     color: #ffffff;
     font-size: 12px;
 
-    margin-bottom: 16px;
 
+}
+
+@media only screen and (max-width: 767px) {
+    .footer-input {
+        margin-bottom: 16px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1367,7 +1372,7 @@ img {
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    overflow: scroll;
 }
 
 .modal-active {
@@ -1375,14 +1380,13 @@ img {
     max-width: 408px;
     min-height: 584px;
 
-    top: 50%;
+    top: 30px;
     left: 50%;
 
     cursor: default;
     display: flex;
     flex-direction: column;
-    transform: translate(-50%, -50%) scale(1);
-
+    transform: translate(-50%) scale(1);
 
     padding-top: 72px;
     padding-right: 24px;
@@ -1394,6 +1398,13 @@ img {
 
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 800px) {
+    .modal-active {
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
 }
 
 
